@@ -1,0 +1,98 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $fontMedium;
+}
+div#headerWrapper{background-color: $primaryColor;}
+header {
+    img {
+        width: 80px;
+        height: auto;
+        align-content: center;
+        float:left;
+        padding-right: 1rem;
+        margin: 0;
+        margin-top: -5px;
+      
+      }
+    padding: 1rem $gutter;
+    h1 {
+        margin: 0; 
+        font-size: 1.5rem;
+        font-weight: $fontHeavy;
+        color: #eee;
+    }
+    //end of h1
+    h2{
+        margin: 0; 
+        font-size: 1.2rem; 
+        font-weight: normal;
+        font-weight: $fontMedium;
+        color: rgb(201, 201, 201);
+    }
+    //end of h2
+    
+} //end of the header
+div#navWrapper{background-color: #111;}
+nav {
+    ul{margin:0; padding: 0;}
+    li {list-style-type: none;}
+    li.active {background-color: rgb(99, 99, 99)}
+    a {
+        display: block;
+        padding: .8rem 0; /*44px min*/
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+} //end nav
+
+a:hover {background-color: #555;}
+}
+div#mainWrapper{background-color: rgb(0, 30, 56);}
+main{
+    img{
+        width: 100%;
+        margin: 0;
+        margin-top: -1rem;
+        padding: 0;
+
+    }
+        background-color: rgba(245, 245, 220, 0.74);
+        display: block; padding: 1rem $gutter;
+    h1 {color: $primaryColor;
+        font-weight: $fontHeavy;
+        margin: 0;
+        padding-top: 5rem;
+        margin-bottom: 1rem;}
+
+    figure{
+        margin: 0;
+        width: 100%;
+        img {width: 100%;} 
+    }//end figure
+    figcaption {text-align: center; font-size: .8rem;}
+} //End main
+
+
+div#footerWrapper{background-color: $primaryColor;}
+footer {
+
+    text-align: center;
+    padding: 1rem $gutter;
+    color: #eee;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
