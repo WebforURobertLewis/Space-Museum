@@ -1,6 +1,7 @@
 
-    nav li {width: 25%; float: left;}
-    
+    nav ul {display: flex; justify-content: space-between; text-align: center; margin-right: 2rem; margin-left: 2rem;}
+
+
     
     main figure {
         float: right; 
