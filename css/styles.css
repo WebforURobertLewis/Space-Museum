@@ -492,6 +492,13 @@ footer {
   display: table;
   clear: both; }
 
+main h1, p, h3, header img {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+main figure {
+  margin-right: 1rem; }
+
 @media only screen and (min-width: 560px) {
   nav ul {
     display: flex;
